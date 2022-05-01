@@ -1,0 +1,62 @@
+﻿@model IEnumerable<WebApplicationMVC.Dominio.Usuario>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="gap-2 d-md-flex justify-content-center mt-2">
+        <div class="col-md-8" >
+					<div class="card text-dark bg-light mb-3">
+						<p class="card-header bg-dark text-white ">Registro de Ingreso
+						a la Planta</p>
+						<div class="row g-0 card-body ">
+							<div class="col-md-4 mt-1" id="imagen">
+								
+								@*@foreach (var item in Model)
+								{
+									<p>@Html.DisplayFor(m => item.Correo)</p>
+									<p>@Html.DisplayFor(m => item.Apellidos)</p>
+									
+								}*@
+
+
+							</div>
+							<div class="col-md-8">
+								<div style="margin-left: 18px;">
+									<h5 class="card-title">Registrar asistencia:</h5>
+																		
+									<ul class="list-group list-group-flush mt-3">
+									  <li class="list-group-item bg-light">Empleado: </li>
+									  <li class="list-group-item bg-light">Número de Legajo: </li>
+									  <li class="list-group-item bg-light">Sector de trabajo: </li>
+									  <li class="list-group-item bg-light">Planta: </li>
+									  <li class="list-group-item bg-light">Fecha y hora del ingreso: </li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+						<form 	
+							method="post"
+							>
+							<div
+								class="card-footer bg-dark d-grid gap-2 d-md-flex justify-content-between">
+									<button type="button" class="btn btn-secondary" 
+										>Cancelar</button>
+									<div>
+										<button type="button" class="btn btn-secondary"
+											
+											>Tránsito</button>
+										<button type="submit" class="btn btn-secondary"
+											>Registrar</button>
+									</div>
+									 
+									
+							</div>
+						</form>
+					</div>					
+				</div>
+    </div>
+    
+</div>
+
